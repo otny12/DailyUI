@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(20deg, #CBFFFF, #FFCBCB);
+}
+#box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-radius: 10em;
+  height: 200px;
+  width: 70%;
+  margin: auto;
+  box-shadow: -5px 10px 20px rgba(0,0,0,0.20), -3px 16px 6px rgba(0,0,0,0.10);
+}
+#text {
+  font-family: 'Zen Loop', cursive;
+  font-size: 50px;
+}
+#form {
+}
+input[type=text] {
+  border-radius: 10em;
+}
+button {
+  border-radius: 10em;
+  cursor: pointer;
+}
+
+button:hover {
+  animation-name: bColor;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes bColor {
+  100%{
+    background-color: #FFCBCB;
+    
+  }
+}
