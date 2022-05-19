@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(20deg, #CBFFFF, #FFCBCB);
+}
+.inbox{border-style:outset; border-color:gray; border-radius: 1em;}
+#firstname {grid-area: firstname;}
+input[type=text]{width: 90%;}
+#lastname {
+  grid-area: lastname;
+}
+#email {grid-area: email;}
+#country{grid-area:country;}
+#address{grid-area:address;}
+#zipcode{grid-area:zipcode;}
+#city{grid-area:city;}
+#cnum{grid-area:cnum;}
+#snum{grid-area:snum;}
+#expdate{grid-area:expdate;}
+.box {
+  display: grid;
+  margin: auto;
+  background-color: white;
+  border-radius:1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "firstname firstname lastname lastname"
+      "email email email email"
+      "country city . ."
+      "address address address zipcode"
+      "cnum cnum cnum cnum"
+      "snum snum expdate expdate";
+}
